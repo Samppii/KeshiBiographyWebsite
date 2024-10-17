@@ -1,0 +1,186 @@
+
+
+@font-face {
+    font-family: 'SegmentAKey-Bold';
+    src: url(../font/SegmentAKeyTrial-Bold.otf);  
+}
+
+@font-face {
+    font-family: 'Akzidenz';
+    src: url(../font/Akzidenz-grotesk-light.ttf);
+}
+
+/* Reset default margin and padding */
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling the body */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Navbar styling on top of the image */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Transparent to show the image behind it */
+    padding: 1rem 2rem;
+    position: absolute; /* Position navbar over the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure it stays on top of the image */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.navbar-title {
+    color: white;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: 'SegmentAKey-Bold';
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Akzidenz';
+}
+
+.navbar-links li {
+    margin-left: 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.navbar-links a:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
+/* Styling the header image */
+#header-image {
+    width: 90%; /* Image scales to fit the width of its container */
+    height: auto; /* Keeps the image's original aspect ratio */
+    filter: grayscale(100%); /* Makes the image black and white */
+    z-index: 1; /* Ensure the image stays behind the navbar */
+}
+
+/* Container padding for spacing */
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 0rem;
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* HOME Section Styling */
+.home-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: black; /* Keeps the same background */
+    color: white; /* Text color */
+}
+
+.home-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    width: 80%; 
+}
+
+.home-title {
+    width: 50%; /* Half the container */
+    text-align: left; /* Align title to the left */
+}
+
+.home-title h2 {
+    font-family: 'SegmentAKey-Bold';
+    font-size: 100px; /* Large heading */
+    margin-bottom: 50px; /* Space below the heading */
+    text-transform: uppercase; /* Uppercase text */
+    margin-top: 0;
+}
+
+.home-content {
+    width: 50%; /* Half the container */
+    font-family: 'Akzidenz';
+}
+
+.home-content p {
+    font-size: 18px; /* Paragraph text size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* ABOUT Section Styling */
+.about-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: black; /* Keeps the same background */
+    color: white; /* Text color */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    width: 80%; 
+}
+
+.about-title {
+    width: 100%; 
+    text-align: left; /* Align title to the left */
+}
+
+.about-title h2 {
+    font-family: 'SegmentAKey-Bold';
+    font-size: 100px; /* Large heading */
+    margin-bottom: 30px; /* Space below the heading */
+    margin-left: 75%; /* Space from the left side */
+    text-transform: uppercase; /* Uppercase text */
+    margin-top: 0;
+}
+
+.about-content {
+    width: 100%; /* Takes up the remaining space */
+    font-family: 'Akzidenz';
+}
+
+.about-content p {
+    font-size: 18px; /* Paragraph text size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    margin-left: 0; /* Space from the left side */
+    margin-top: 40px;
+}
+
+/* Show More Button Styling */
+#show-more-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Akzidenz';
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#show-more-btn:hover {
+    background-color: white;
+    color: black;
+}

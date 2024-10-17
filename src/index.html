@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>Keshi's Bibliography</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar section with title and links -->
+        <nav class="navbar">
+            <div class="navbar-title">Keshi</div>
+            <ul class="navbar-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#">SONGS</a></li>
+                <li><a href="#">SPOTIFY</a></li>
+            </ul>
+        </nav>
+        <!-- Image section -->
+        <div class="container header-content">
+            <img src="../image/keshi.jpg" alt="KeshiImg" id="header-image">
+        </div>
+    </header>
+
+    <!-- HOME Section -->
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <!-- Who's Keshi? -->
+            <div class="home-title">
+                <h2>Welcome to Keshi's World</h2>
+            </div>
+            <!-- Information stuff -->
+            <div class="home-content">
+                <p>Immerse yourself in the musical journey of Keshi, an artist who blends emotional storytelling with minimalist production. With each track, Keshi takes you on a ride through love, loss, and introspection. Here, you'll find the story behind the music and the man who's reshaping the R&B and lo-fi scene.</p>
+            </div>
+        </div>
+    </section>
+
+    <br><br><hr width="90%">
+
+    <!-- ABOUT Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <!-- Information stuff -->
+            <div class="about-content">
+                <p>
+                    Keshi, born Casey Luong, is a Vietnamese-American singer, songwriter, and record producer who rose to fame with his introspective lyrics and mellow sound.
+                </p>
+                
+                <p>
+                    He blends R&B, lo-fi, and pop influences to create a signature sound that resonates with his fans worldwide.
+                </p>
+                
+                <p>
+                    Keshi began his musical journey by uploading his self-produced music on SoundCloud, which quickly gained traction. His debut EPs, such as "The Reaper" and "Skeletons," helped establish his name in the indie music scene.
+                </p>
+                <div id="more-text" style="display: none;">
+                    <p>
+                        Keshi's musical style is characterized by its minimalistic production, delicate guitar melodies, and ethereal vocals. Drawing inspiration from artists like Frank Ocean, John Mayer, and Joji, Keshi’s sound is both soothing and melancholic, making his music a go-to for late-night playlists. His intimate production style, which he largely manages himself, gives his music an unfiltered, raw quality that fans deeply appreciate.
+                        <br><br>
+                        As Keshi's fame grew, so did his impact on the global music scene. He transitioned from making music in his bedroom to touring worldwide, playing in sold-out venues across the U.S., Europe, and Asia. His ability to remain authentic while refining his sound has earned him millions of streams on platforms like Spotify and Apple Music, cementing his status as one of the most promising emerging artists in the alternative R&B and lo-fi space.
+                        <br><br>
+                        In 2021, Keshi released his highly anticipated debut album Gabriel, which showcased his growth as an artist and featured more complex soundscapes. With collaborations with high-profile producers and continued emphasis on his deeply personal lyrics, Gabriel propelled Keshi further into the mainstream, earning critical acclaim and further solidifying his place in the music industry.
+                        <br><br>
+                        Despite his success, Keshi remains grounded, staying connected with his fans through social media and maintaining an active role in the production of his music. His authenticity and vulnerability continue to draw fans in, making Keshi a true voice of this generation's indie and R&B scene.
+                    </p>
+                </div>
+                <button id="show-more-btn" onclick="toggleText()">Show More</button>
+            </div>
+            <!-- Who's Keshi? -->
+            <div class="about-title">
+                <h2>Who <br>is<br> Keshi?</h2>
+            </div>
+        </div>
+    </section>
+
+    <br><br><hr width="90%">
+
+    <script>
+    function toggleText() {
+        const moreText = document.getElementById("more-text");
+        const btnText = document.getElementById("show-more-btn");
+
+        if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            btnText.textContent = "Show Less";
+        } else {
+            moreText.style.display = "none";
+            btnText.textContent = "Show More";
+        }
+    }
+    </script>
+</body>
+</html>
