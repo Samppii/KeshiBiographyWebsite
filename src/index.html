@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +8,25 @@
 </head>
 <body>
     <header>
-        <!-- Navbar section with title and links -->
         <nav class="navbar">
             <div class="navbar-title">Keshi</div>
             <ul class="navbar-links">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#">SONGS</a></li>
+                <li><a href="#albums">ALBUMS</a></li>
                 <li><a href="#">SPOTIFY</a></li>
             </ul>
         </nav>
-        <!-- Image section -->
         <div class="container header-content">
             <img src="../image/keshi.jpg" alt="KeshiImg" id="header-image">
         </div>
     </header>
 
-    <!-- HOME Section -->
     <section id="home" class="home-section">
         <div class="home-container">
-            <!-- Who's Keshi? -->
             <div class="home-title">
                 <h2>Welcome to Keshi's World</h2>
             </div>
-            <!-- Information stuff -->
             <div class="home-content">
                 <p>Immerse yourself in the musical journey of Keshi, an artist who blends emotional storytelling with minimalist production. With each track, Keshi takes you on a ride through love, loss, and introspection. Here, you'll find the story behind the music and the man who's reshaping the R&B and lo-fi scene.</p>
             </div>
@@ -40,19 +35,15 @@
 
     <br><br><hr width="90%">
 
-    <!-- ABOUT Section -->
     <section id="about" class="about-section">
         <div class="about-container">
-            <!-- Information stuff -->
             <div class="about-content">
                 <p>
                     Keshi, born Casey Luong, is a Vietnamese-American singer, songwriter, and record producer who rose to fame with his introspective lyrics and mellow sound.
                 </p>
-                
                 <p>
                     He blends R&B, lo-fi, and pop influences to create a signature sound that resonates with his fans worldwide.
                 </p>
-                
                 <p>
                     Keshi began his musical journey by uploading his self-produced music on SoundCloud, which quickly gained traction. His debut EPs, such as "The Reaper" and "Skeletons," helped establish his name in the indie music scene.
                 </p>
@@ -69,7 +60,6 @@
                 </div>
                 <button id="show-more-btn" onclick="toggleText()">Show More</button>
             </div>
-            <!-- Who's Keshi? -->
             <div class="about-title">
                 <h2>Who <br>is<br> Keshi?</h2>
             </div>
@@ -78,19 +68,65 @@
 
     <br><br><hr width="90%">
 
-    <script>
-    function toggleText() {
-        const moreText = document.getElementById("more-text");
-        const btnText = document.getElementById("show-more-btn");
+    <section id="albums" class="album-section">
+        <div class="album-container">
+            <button class="scroll-btn" id="scroll-left" onclick="scrollLeft()">&#10094;</button>
+            <div class="albums-wrapper" id="albums-wrapper">
+                <div class="album-content">
+                    <img src="../image/Gabriel.jpg" alt="Gabriel">
+                </div>
+                <div class="album-content">
+                    <img src="../image/Skeletons.jpg" alt="Skeletons">
+                </div>
+                <div class="album-content">
+                    <img src="../image/TheReaper.jpg" alt="The Reaper">
+                </div>
+                <div class="album-content">
+                    <img src="../image/Requeim.jpg" alt="Requeim">
+                </div>
+                <div class="album-content">
+                    <img src="../image/Always.jpg" alt="Always">
+                </div>
+                <div class="album-content">
+                    <img src="../image/Bandaids.jpg" alt="Bandaids">
+                </div>
+            </div>
+            <button class="scroll-btn" id="scroll-right" onclick="scrollRight()">&#10095;</button>
+        </div>
+    </section>
+    
 
-        if (moreText.style.display === "none") {
-            moreText.style.display = "block";
-            btnText.textContent = "Show Less";
-        } else {
-            moreText.style.display = "none";
-            btnText.textContent = "Show More";
+    <script>
+        function toggleText() {
+            const moreText = document.getElementById("more-text");
+            const btnText = document.getElementById("show-more-btn");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                btnText.textContent = "Show Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.textContent = "Show More";
+            }
         }
-    }
+
+        function scrollLeft() {
+            const wrapper = document.querySelector('.albums-wrapper');
+            wrapper.scrollBy({
+                top: 0,
+                left: -200,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            const wrapper = document.querySelector('.albums-wrapper');
+            wrapper.scrollBy({
+                top: 0,
+                left: 200,
+                behavior: 'smooth'
+            });
+        }
     </script>
 </body>
 </html>
