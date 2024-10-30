@@ -14,13 +14,15 @@
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#albums">ALBUMS</a></li>
-                <li><a href="#">SPOTIFY</a></li>
+                <li><a href="https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO?si=FI5-KnJJRL2UoEosHaFY8w">SPOTIFY</a></li>
             </ul>
         </nav>
         <div class="container header-content">
             <img src="../image/keshi.jpg" alt="KeshiImg" id="header-image">
         </div>
     </header>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()" style="display: none;">Top</button>
 
     <section id="home" class="home-section">
         <div class="home-container">
@@ -68,35 +70,92 @@
 
     <br><br><hr width="90%">
 
+    <h2 class="albums-title">Keshi's Musical Heaven</h2> 
+    
     <section id="albums" class="album-section">
         <div class="album-container">
-            <button class="scroll-btn" id="scroll-left" onclick="scrollLeft()">&#10094;</button>
             <div class="albums-wrapper" id="albums-wrapper">
                 <div class="album-content">
                     <img src="../image/Gabriel.jpg" alt="Gabriel">
+                    <h3>Gabriel</h3>
                 </div>
                 <div class="album-content">
                     <img src="../image/Skeletons.jpg" alt="Skeletons">
+                    <h3>Skeletons</h3>
                 </div>
                 <div class="album-content">
                     <img src="../image/TheReaper.jpg" alt="The Reaper">
+                    <h3>The Reaper</h3>
                 </div>
                 <div class="album-content">
                     <img src="../image/Requeim.jpg" alt="Requeim">
+                    <h3>Requeim</h3>
                 </div>
                 <div class="album-content">
                     <img src="../image/Always.jpg" alt="Always">
+                    <h3>Always</h3>
                 </div>
                 <div class="album-content">
                     <img src="../image/Bandaids.jpg" alt="Bandaids">
+                    <h3>Bandaids</h3>
                 </div>
             </div>
-            <button class="scroll-btn" id="scroll-right" onclick="scrollRight()">&#10095;</button>
         </div>
     </section>
-    
 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Keshi</h4>
+                <p>Discover more about Keshi's journey, music, and artistry.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#albums">Albums</a></li>
+                    <li><a href="#">Spotify</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Keshi. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    
     <script>
+        // Get the button
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to the top of the document when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
         function toggleText() {
             const moreText = document.getElementById("more-text");
             const btnText = document.getElementById("show-more-btn");

@@ -12,6 +12,7 @@
 html, body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    scroll-behavior: smooth;
 }
 
 /* Styling the body */
@@ -74,7 +75,7 @@ body {
     width: 90%; /* Image scales to fit the width of its container */
     height: auto; /* Keeps the image's original aspect ratio */
     filter: grayscale(100%); /* Makes the image black and white */
-    z-index: 1; /* Ensure the image stays behind the navbar */
+    z-index: 1; /* Ensures the image stays behind the navbar */
 }
 
 /* Container padding for spacing */
@@ -96,13 +97,13 @@ body {
 
 .home-container {
     display: flex;
-    flex-direction: row; /* Align items in a row */
+    flex-direction: row; /* Aligns items in a row */
     width: 80%; 
 }
 
 .home-title {
-    width: 50%; /* Half the container */
-    text-align: left; /* Align title to the left */
+    width: 50%; /* Halfs the container */
+    text-align: left; /* Aligns title to the left */
 }
 
 .home-title h2 {
@@ -114,7 +115,7 @@ body {
 }
 
 .home-content {
-    width: 50%; /* Half the container */
+    width: 50%; /* Halfs the container */
     font-family: 'Akzidenz';
 }
 
@@ -184,21 +185,33 @@ body {
 }
 
 /* Albums section styling */
+.albums-title {
+    font-family: 'SegmentAKey-Bold'; /* Same font as the home title */
+    font-size: 100px; /* Font size for the title */
+    text-align: center; /* Center the title */
+    margin-bottom: 0; /* Space below the title */
+    color: white; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 .album-section {
     display: flex;
     justify-content: center; /* Center the album section */
     align-items: center;
-    padding: 2rem;
+    padding: 2rem; /* Padding around the section */
     background-color: black; /* Keeps the same background */
+    color: white; /* Text color */
 }
 
 .album-container {
     position: relative;
     display: flex;
-    justify-content: center; /* Center the content within */
+    justify-content: center; /* Centers the content within */
     align-items: center;
     width: 90%; /* Adjusted for better centering */
-    overflow: hidden; /* Hide overflow for horizontal scrolling */
+    overflow: hidden; /* Hides overflow for horizontal scrolling */
 }
 
 /* Wrapper for album images */
@@ -209,48 +222,102 @@ body {
     scroll-behavior: smooth; /* Smooth scrolling */
     padding-bottom: 1rem; /* Optional: add some padding at the bottom */
     max-width: 100%; /* Prevent it from exceeding the container */
+    height: auto; /* Allow height to adjust for content */
 }
 
 .album-content {
     width: 200px; /* Fixed width for each album */
-    height: 300px; /* Fixed height for each album */
-    text-align: center;
+    text-align: center; /* Center align text */
 }
 
 .album-content img {
     width: 100%; /* Fill the width of the container */
-    height: 100%; /* Fill the height of the container */
+    height: 300px; /* Fixed height for images */
     object-fit: cover; /* Maintain aspect ratio and cover the entire area */
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
 
-.album-content img:hover {
-    filter: none; /* Remove grayscale on hover */
+.album-content h3 {
+    color: white; /* Title color */
+    font-family: 'Akzidenz'; /* Font family for titles */
+    font-size: 20px; /* Title font size */
+    margin: 10px 0 0 0; /* Space above the title */
 }
+
+.album-content img:hover {
+    filter: none; /* Removes grayscale on hover */
+}
+
+/*Footer section*/
+.footer {
+    background-color: #1a1a1a; /* Dark background color */
+    color: white; /* White text color */
+    padding: 2rem 0; /* Padding for the footer */
+    text-align: center; /* Center the text */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Distribute sections evenly */
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 2rem; /* Padding on sides */
+}
+
+.footer-section {
+    flex: 1; /* Each section takes equal space */
+    margin: 1rem; /* Margin around sections */
+}
+
+.footer-section h4 {
+    font-family: 'SegmentAKey-Bold'; /* Use the same font */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.footer-links, .social-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-links li, .social-links li {
+    margin: 0.5rem 0; /* Space between links */
+}
+
+.footer-links a, .social-links a {
+    color: white; /* White link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover, .social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    background-color: #0d0d0d; /* Slightly darker background for the bottom */
+    padding: 1rem 0; /* Padding for the bottom section */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove default margin */
+}
+
 
 /* Scroll buttons */
-.scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
     color: white;
-    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 1000;
+    display: none; /* Hidden by default */
 }
 
-#scroll-left {
-    left: 10px;
-}
-
-#scroll-right {
-    right: 10px;
-}
-
-.scroll-btn:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: black;
+#scrollTopBtn:hover {
+    background-color: gray;
 }
