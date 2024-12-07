@@ -8,34 +8,33 @@
     src: url(../font/Akzidenz-grotesk-light.ttf);
 }
 
-/* Reset default margin and padding */
 html, body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0; 
     scroll-behavior: smooth;
 }
 
-/* Styling the body */
+
 body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden;
 }
 
-/* Navbar styling on top of the image */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent; /* Transparent to show the image behind it */
+    background-color: transparent;
     padding: 1rem 2rem;
-    position: absolute; /* Position navbar over the image */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2; /* Ensure it stays on top of the image */
-    box-sizing: border-box; /* Include padding in the element's total width */
+    z-index: 2;
+    box-sizing: border-box;
 }
 
 .navbar-title {
@@ -63,19 +62,19 @@ body {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    padding: 10px; /* Add padding for better spacing */
+    padding: 10px; 
 }
 
 .navbar-links a:hover {
-    color: #ddd; /* Lighter color on hover */
+    color: #ddd; 
 }
 
 /* Styling the header image */
 #header-image {
-    width: 90%; /* Image scales to fit the width of its container */
-    height: auto; /* Keeps the image's original aspect ratio */
-    filter: grayscale(100%); /* Makes the image black and white */
-    z-index: 1; /* Ensures the image stays behind the navbar */
+    width: 90%; 
+    height: auto; 
+    filter: grayscale(100%); 
+    z-index: 1; 
 }
 
 /* Container padding for spacing */
@@ -83,7 +82,7 @@ body {
     position: relative;
     z-index: 1;
     padding: 0rem;
-    box-sizing: border-box; /* Include padding in the element's total width */
+    box-sizing: border-box; 
 }
 
 /* HOME Section Styling */
@@ -91,38 +90,38 @@ body {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    background-color: black; /* Keeps the same background */
-    color: white; /* Text color */
+    background-color: black;
+    color: white;
 }
 
 .home-container {
     display: flex;
-    flex-direction: row; /* Aligns items in a row */
+    flex-direction: row;
     width: 80%; 
 }
 
 .home-title {
-    width: 50%; /* Halfs the container */
-    text-align: left; /* Aligns title to the left */
+    width: 50%;
+    text-align: left;
 }
 
 .home-title h2 {
     font-family: 'SegmentAKey-Bold';
-    font-size: 100px; /* Large heading */
-    margin-bottom: 50px; /* Space below the heading */
-    text-transform: uppercase; /* Uppercase text */
+    font-size: 100px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
     margin-top: 0;
 }
 
 .home-content {
-    width: 50%; /* Halfs the container */
+    width: 50%;
     font-family: 'Akzidenz';
 }
 
 .home-content p {
-    font-size: 18px; /* Paragraph text size */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 /* ABOUT Section Styling */
@@ -130,40 +129,40 @@ body {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    background-color: black; /* Keeps the same background */
-    color: white; /* Text color */
+    background-color: black;
+    color: white;
 }
 
 .about-container {
     display: flex;
-    flex-direction: row; /* Align items in a row */
+    flex-direction: row;
     width: 80%; 
 }
 
 .about-title {
     width: 100%; 
-    text-align: left; /* Align title to the left */
+    text-align: left;
 }
 
 .about-title h2 {
     font-family: 'SegmentAKey-Bold';
-    font-size: 100px; /* Large heading */
-    margin-bottom: 30px; /* Space below the heading */
-    margin-left: 75%; /* Space from the left side */
-    text-transform: uppercase; /* Uppercase text */
+    font-size: 100px;
+    margin-bottom: 30px; 
+    margin-left: 75%; 
+    text-transform: uppercase; 
     margin-top: 0;
 }
 
 .about-content {
-    width: 100%; /* Takes up the remaining space */
+    width: 100%; 
     font-family: 'Akzidenz';
 }
 
 .about-content p {
-    font-size: 18px; /* Paragraph text size */
-    line-height: 1.6; /* Line height for readability */
-    margin-bottom: 15px; /* Space between paragraphs */
-    margin-left: 0; /* Space from the left side */
+    font-size: 18px;
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+    margin-left: 0; 
     margin-top: 40px;
 }
 
@@ -185,11 +184,14 @@ body {
 }
 
 /* Albums section styling */
+.albums-wrapper a{
+    text-decoration: none;
+}
 .albums-title {
-    font-family: 'SegmentAKey-Bold'; /* Same font as the home title */
-    font-size: 100px; /* Font size for the title */
-    text-align: center; /* Center the title */
-    margin-bottom: 0; /* Space below the title */
+    font-family: 'SegmentAKey-Bold';
+    font-size: 100px; 
+    text-align: center; 
+    margin-bottom: 0; 
     color: white; 
     margin-top: 0;
     margin-bottom: 0;
@@ -198,110 +200,115 @@ body {
 
 .album-section {
     display: flex;
-    justify-content: center; /* Center the album section */
+    justify-content: center; 
     align-items: center;
-    padding: 2rem; /* Padding around the section */
-    background-color: black; /* Keeps the same background */
-    color: white; /* Text color */
+    padding: 2rem; 
+    background-color: black; 
+    color: white; 
+    overflow: hidden;
 }
 
 .album-container {
     position: relative;
     display: flex;
-    justify-content: center; /* Centers the content within */
+    justify-content: center; 
     align-items: center;
-    width: 90%; /* Adjusted for better centering */
-    overflow: hidden; /* Hides overflow for horizontal scrolling */
+    width: 90%; 
 }
 
 /* Wrapper for album images */
 .albums-wrapper {
     display: flex;
-    gap: 20px; /* Space between albums */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    scroll-behavior: smooth; /* Smooth scrolling */
-    padding-bottom: 1rem; /* Optional: add some padding at the bottom */
-    max-width: 100%; /* Prevent it from exceeding the container */
-    height: auto; /* Allow height to adjust for content */
+    gap: 20px; 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 1rem; 
+    max-width: 100%; 
+    height: auto; 
+    overflow: hidden;
 }
 
 .album-content {
-    width: 200px; /* Fixed width for each album */
-    text-align: center; /* Center align text */
+    width: 200px; 
+    text-align: center; 
 }
 
 .album-content img {
-    width: 100%; /* Fill the width of the container */
-    height: 300px; /* Fixed height for images */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
 
 .album-content h3 {
-    color: white; /* Title color */
-    font-family: 'Akzidenz'; /* Font family for titles */
-    font-size: 20px; /* Title font size */
-    margin: 10px 0 0 0; /* Space above the title */
+    color: white; 
+    font-family: 'Akzidenz'; 
+    font-size: 20px; 
+    margin: 10px 0 0 0; 
 }
 
 .album-content img:hover {
-    filter: none; /* Removes grayscale on hover */
+    filter: none; 
 }
 
 /*Footer section*/
 .footer {
-    background-color: #1a1a1a; /* Dark background color */
-    color: white; /* White text color */
-    padding: 2rem 0; /* Padding for the footer */
-    text-align: center; /* Center the text */
+    background-color: #1a1a1a; 
+    color: white; 
+    padding: 2rem 0; 
+    text-align: center; 
+    margin-top: 100px;
 }
 
 .footer-content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-around; /* Distribute sections evenly */
-    max-width: 1200px; /* Max width for the content */
-    margin: 0 auto; /* Center the content */
-    padding: 0 2rem; /* Padding on sides */
+    display: flex; 
+    justify-content: space-around; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 2rem; 
 }
 
 .footer-section {
-    flex: 1; /* Each section takes equal space */
-    margin: 1rem; /* Margin around sections */
+    flex: 1; 
+    margin: 1rem; 
 }
 
 .footer-section h4 {
-    font-family: 'SegmentAKey-Bold'; /* Use the same font */
-    margin-bottom: 1rem; /* Space below the heading */
+    font-family: 'SegmentAKey-Bold'; 
+    margin-bottom: 1rem; 
 }
 
 .footer-links, .social-links {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
+    list-style-type: none; 
+    padding: 0;
 }
 
 .footer-links li, .social-links li {
-    margin: 0.5rem 0; /* Space between links */
+    margin: 0.5rem 0; 
 }
 
 .footer-links a, .social-links a {
-    color: white; /* White link color */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    text-decoration: none;
 }
 
 .footer-links a:hover, .social-links a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
 
 .footer-bottom {
-    background-color: #0d0d0d; /* Slightly darker background for the bottom */
-    padding: 1rem 0; /* Padding for the bottom section */
+    background-color: #0d0d0d;
+    padding: 1rem 0; 
 }
 
 .footer-bottom p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
+h4{
+    font-size: 4dvh;
+}
 
 /* Scroll buttons */
 #scrollTopBtn {
@@ -315,9 +322,34 @@ body {
     padding: 10px 15px;
     cursor: pointer;
     z-index: 1000;
-    display: none; /* Hidden by default */
+    display: none;
 }
 
 #scrollTopBtn:hover {
     background-color: gray;
 }
+
+
+
+.scroll-button{
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover{
+    background-color: rgba(225, 225, 225, 0.7);
+    color: black;
+}
+
