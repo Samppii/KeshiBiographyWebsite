@@ -2,7 +2,7 @@
 
 Welcome to Keshi's Bibliography, a CSS final project for CodeDex. This project is a visually engaging and informative webpage dedicated to the musical journey of Keshi, a Vietnamese-American artist blending R&B, lo-fi, and pop influences.
 
-Features
+#Features
 
 Navigation Bar
 
