@@ -40,7 +40,7 @@ Welcome to Keshi's Bibliography, a CSS final project for CodeDex. This project i
 
 * Includes copyright information.
 
-**Design Highlights**
+#Design Highlights
 
 **Typography**
 
@@ -62,7 +62,7 @@ Welcome to Keshi's Bibliography, a CSS final project for CodeDex. This project i
 
 * Ensures a seamless experience on both desktop and mobile devices.
 
-**Technologies Used**
+## Technologies Used
 
 * HTML5: For the structure of the webpage.
 
@@ -70,7 +70,7 @@ Welcome to Keshi's Bibliography, a CSS final project for CodeDex. This project i
 
 * JavaScript: For interactivity, including the scroll-to-top button and horizontal scrolling.
 
-**How to Run**
+## How to Run
 
 1. Clone this repository.
 
@@ -86,19 +86,19 @@ Welcome to Keshi's Bibliography, a CSS final project for CodeDex. This project i
 
 3. Open index.html in any modern web browser.
 
-**Project Challenges**
+## Project Challenges
 
 * Implementing smooth horizontal scrolling for the albums section.
 
 * Designing a consistent aesthetic that reflects Keshi’s artistic style.
 
-**Lessons Learned**
+## Lessons Learned
 
 * Enhanced understanding of CSS animations and transitions.
 
 * Improved JavaScript skills for handling dynamic interactivity.
 
-**Future Improvements**
+# Future Improvements
 
 * Add more sections, such as a "Tour Dates" page or "Fan Gallery."
 
