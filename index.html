@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/style.css" rel="stylesheet"/>
+    <title>Keshi's Bibliography</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-title">Keshi</div>
+            <ul class="navbar-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#albums">ALBUMS</a></li>
+                <li><a href="https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO?si=FI5-KnJJRL2UoEosHaFY8w">SPOTIFY</a></li>
+            </ul>
+        </nav>
+        <div class="container header-content">
+            <img src="./image/keshi.jpg" alt="KeshiImg" id="header-image">
+        </div>
+    </header>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()" style="display: none;">Top</button>
+
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-title">
+                <h2>Welcome to Keshi's World</h2>
+            </div>
+            <div class="home-content">
+                <p>Immerse yourself in the musical journey of Keshi, an artist who blends emotional storytelling with minimalist production. With each track, Keshi takes you on a ride through love, loss, and introspection. Here, you'll find the story behind the music and the man who's reshaping the R&B and lo-fi scene.</p>
+            </div>
+        </div>
+    </section>
+
+    <br><br><hr width="90%">
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <p>
+                    Keshi, born Casey Luong, is a Vietnamese-American singer, songwriter, and record producer who rose to fame with his introspective lyrics and mellow sound.
+                </p>
+                <p>
+                    He blends R&B, lo-fi, and pop influences to create a signature sound that resonates with his fans worldwide.
+                </p>
+                <p>
+                    Keshi began his musical journey by uploading his self-produced music on SoundCloud, which quickly gained traction. His debut EPs, such as "The Reaper" and "Skeletons," helped establish his name in the indie music scene.
+                </p>
+                <div id="more-text" style="display: none;">
+                    <p>
+                        Keshi's musical style is characterized by its minimalistic production, delicate guitar melodies, and ethereal vocals. Drawing inspiration from artists like Frank Ocean, John Mayer, and Joji, Keshi’s sound is both soothing and melancholic, making his music a go-to for late-night playlists. His intimate production style, which he largely manages himself, gives his music an unfiltered, raw quality that fans deeply appreciate.
+                        <br><br>
+                        As Keshi's fame grew, so did his impact on the global music scene. He transitioned from making music in his bedroom to touring worldwide, playing in sold-out venues across the U.S., Europe, and Asia. His ability to remain authentic while refining his sound has earned him millions of streams on platforms like Spotify and Apple Music, cementing his status as one of the most promising emerging artists in the alternative R&B and lo-fi space.
+                        <br><br>
+                        In 2021, Keshi released his highly anticipated debut album Gabriel, which showcased his growth as an artist and featured more complex soundscapes. With collaborations with high-profile producers and continued emphasis on his deeply personal lyrics, Gabriel propelled Keshi further into the mainstream, earning critical acclaim and further solidifying his place in the music industry.
+                        <br><br>
+                        Despite his success, Keshi remains grounded, staying connected with his fans through social media and maintaining an active role in the production of his music. His authenticity and vulnerability continue to draw fans in, making Keshi a true voice of this generation's indie and R&B scene.
+                    </p>
+                </div>
+                <button id="show-more-btn" onclick="toggleText()">Show More</button>
+            </div>
+            <div class="about-title">
+                <h2>Who <br>is<br> Keshi?</h2>
+            </div>
+        </div>
+    </section>
+
+    <br><br><hr width="90%">
+
+    <h2 class="albums-title">Keshi's Musical Heaven</h2> 
+    
+    <section id="albums" class="album-section">
+        <div class="album-container">
+
+            <button class="scroll-button left-button" id="scroll-left">&#8592;</button>
+
+            <div class="albums-wrapper" id="albums-wrapper">
+                <a href = "https://open.spotify.com/album/1WVIJaAboRSwJOe4u0n0Q7?si=Fx-bBHFVSo2qwkfH1aql4w">
+                <div class="album-content">
+                    <img src="./image/Gabriel.jpg" alt="Gabriel">
+                    <h3>Gabriel</h3>
+                </div>
+                </a>
+                
+                <a href = "https://open.spotify.com/album/14IZ6aHadzsKrNMnntwLb0?si=d1PZ-4F_QyquK7hmsXAtIg">
+                <div class="album-content">
+                    <img src="./image/Skeletons.jpg" alt="Skeletons">
+                    <h3>Skeletons</h3>
+                </div>
+                </a>
+
+                <a href = "https://open.spotify.com/album/1hM5xkleU8wr2yOaY2gCMB?si=NXokyNhrSA-utw5Qs6WlkQ">
+                <div class="album-content">
+                    <img src="./image/TheReaper.jpg" alt="The Reaper">
+                    <h3>The Reaper</h3>
+                </div>
+                </a>
+
+                <a href="https://open.spotify.com/album/0ResBXlOIf8Bqsf6W9swJx?si=bHtgOHAyS16BRRgEmCqpQg">
+                <div class="album-content">
+                    <img src="./image/Requeim.jpg" alt="Requeim">
+                    <h3>Requeim</h3>
+                </div>
+                </a>
+
+                <a href="https://open.spotify.com/album/37FLvUnF5qC1LZBNCWqG1A?si=L-mHAdG2Rn2csqy-Tlahvw">
+                <div class="album-content">
+                    <img src="./image/Always.jpg" alt="Always">
+                    <h3>Always</h3>
+                </div>
+                </a>
+
+                <a href ="https://open.spotify.com/album/4LfFHT00C9ImLMUjHkqWjQ?si=ajTpDzp0TB-MV5Oi12-E5w">
+                <div class="album-content">
+                    <img src="./image/Bandaids.jpg" alt="Bandaids">
+                    <h3>Bandaids</h3>
+                </div>
+                </a>
+
+            </div>
+
+            <button class="scroll-button right-button" id="scroll-right">&#8594;</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Keshi</h4>
+                <p>Discover more about Keshi's journey, music, and artistry.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#albums">Albums</a></li>
+                    <li><a href="https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO?si=FI5-KnJJRL2UoEosHaFY8w">Spotify</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>FOLLOW KESHI ON</h4>
+                <ul class="social-links">
+                    <li><a href="https://x.com/keshimusic">Twitter (X)</a></li>
+                    <li><a href="https://www.instagram.com/keshi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCX40ZEqeYqCXyiAzrSUiPOg">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Keshi. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        function toggleText() {
+            const moreText = document.getElementById("more-text");
+            const btnText = document.getElementById("show-more-btn");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                btnText.textContent = "Show Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.textContent = "Show More";
+            }
+        }
+
+        function scrollLeft() {
+            const wrapper = document.querySelector('.albums-wrapper');
+            wrapper.scrollBy({
+                top: 0,
+                left: -200,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            const wrapper = document.querySelector('.albums-wrapper');
+            wrapper.scrollBy({
+                top: 0,
+                left: 200,
+                behavior: 'smooth'
+            });
+        }
+
+        //horizontal scrolling AHAHA I FINALLY CRACKED IT BABYYY
+        const scrollWrapper = document.getElementById("albums-wrapper");
+        const scrollLeftButton = document.getElementById("scroll-left");
+        const scrollRightButton = document.getElementById("scroll-right");
+
+        const scrollAmount = 3000;
+
+        scrollLeftButton.addEventListener("click", ()=> {
+            scrollWrapper.scrollBy({
+                left: -scrollAmount,
+                behavior: "smooth",
+            });
+        });
+
+        scrollRightButton.addEventListener("click", ()=> {
+            scrollWrapper.scrollBy({
+                left: scrollAmount,
+                behavior: "smooth",
+            });
+        });
+       
+    </script>
+</body>
+</html>
